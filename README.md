@@ -18,4 +18,9 @@ gh repo create my-project --public --source=. --remote=origin
 
 git push -u origin main  
 
+```zsh
+mkdir my-project  
+cd my-project  
+git init  
+```
 
