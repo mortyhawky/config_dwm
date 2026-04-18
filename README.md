@@ -27,3 +27,5 @@ gh repo create my-project --public --source=. --remote=origin
 ```bash
 git push -u origin main  
 ```
+
+Run `git status` to see changes.
