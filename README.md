@@ -29,3 +29,10 @@ git push -u origin main
 ```
 
 Run `git status` to see changes.
+
+#b toggle bar
+#w launch browser
+#hjkl
+#enter
++#enter focus window
+
