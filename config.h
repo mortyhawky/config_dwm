@@ -1,4 +1,4 @@
-/* See LICENSE file for copyright and license details. */
+// Updated ArchReal 2026-04-25 11:25 Sat
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
@@ -11,7 +11,8 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+//static const char col_cyan[]        = "#005577";
+static const char col_cyan[]        = "#222222";
 //static const char col_cyan[]        = "#0000FF";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -29,7 +30,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "firefox",  NULL,       NULL,       1 << 3,       0,           -1 },
 };
 
 /* layout(s) */
@@ -42,9 +43,9 @@ static const int refreshrate = 60;  /* refresh rate (per second) for client move
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "[][]", tile    },  /* first entry is default */
+	{ "~F~",  NULL    },  /* no layout function means floating behavior */
+	{ "[M]",  monocle },
 };
 
 /* key definitions */
